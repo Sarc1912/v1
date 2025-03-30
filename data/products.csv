@@ -1,7 +1,7 @@
 id,name,price,categoryId,description,image,stock,slug
-1,Collar,599.99,1,Último modelo,/images/collar.jpg,10,smartphone-xyz
-2,Camisa Algodón,29.99,2,Algodón orgánico,/images/shirt.jpg,5,camisa-algodon
-3,Zarcillos de Gato, 10.99,1,Fantasia,/images/zarcillo2.jpg,10,zarcillos-gato
-4,Zarcillos de Cherry, 10.99,1,Fantasia,/images/zarcillo1.jpg,8,zarcillos-cherry
-5,Audifonos, 10.99,3,Fantasia,/images/audifonos.jpg,20,audifonos
-6,Pulsera Ojo Turco, 5, 4, Fantasia,/images/pulsera1.jpg, 8, pulsera-ojo-turco
+1,Collar,5.99,1,Último modelo,/images/collar.jpg,10,smartphone-xyz
+2,Toalla vestido,9.00,2,Algodón orgánico,/images/shirt.jpg,5,camisa-algodon
+3,Zarcillos de Gato, 3.00,1,Fantasia,/images/zarcillo2.jpg,10,zarcillos-gato
+4,Zarcillos de Cherry, 5.00,1,Fantasia,/images/zarcillo1.jpg,8,zarcillos-cherry
+5,Audifonos, 6,3,Fantasia,/images/audifonos.jpg,20,audifonos
+6,Pulsera Ojo Turco, 3.00, 4, Fantasia,/images/pulsera1.jpg, 8, pulsera-ojo-turco
