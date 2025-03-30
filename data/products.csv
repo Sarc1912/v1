@@ -3,4 +3,4 @@ id,name,price,categoryId,description,image,stock,slug
 2,Camisa Algodón,29.99,2,Algodón orgánico,/images/shirt.jpg,5,camisa-algodon
 3,Zarcillos de Gato, 10.99,1,Fantasia,/images/zarcillo2.jpg,10,zarcillos-gato
 4,Zarcillos de Cherry, 10.99,1,Fantasia,/images/zarcillo1.jpg,8,zarcillos-cherry
-5,Audifonos, 10.99,4,Fantasia,/images/audifonos.jpg,20,audifonos
+5,Audifonos, 10.99,3,Fantasia,/images/audifonos.jpg,20,audifonos
