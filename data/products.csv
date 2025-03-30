@@ -4,3 +4,4 @@ id,name,price,categoryId,description,image,stock,slug
 3,Zarcillos de Gato, 10.99,1,Fantasia,/images/zarcillo2.jpg,10,zarcillos-gato
 4,Zarcillos de Cherry, 10.99,1,Fantasia,/images/zarcillo1.jpg,8,zarcillos-cherry
 5,Audifonos, 10.99,3,Fantasia,/images/audifonos.jpg,20,audifonos
+6,Pulsera Ojo Turco, 5, 4, Fantasia,/images/pulsera1.jpg, 8, pulsera-ojo-turco

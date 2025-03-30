@@ -60,18 +60,24 @@ export default function ProductList({
   }, 300);
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <>
       {/* Controles */}
-      <div className="mb-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+      <div className="bg-[#FAADA9] h-full w-full mb-8 flex px-10 flex-col md:flex-row justify-between items-start md:items-center gap-4 py-4">
         {/* Logo */}
-        <div className="flex-shrink-0">
-          <Image
-            src="/logo/logo.png"
-            width={100}
-            height={100}
-            alt="Logo"
-            className="rounded-lg"
-          />
+        <div className="flex-shrink-0 flex items-center justify-center">
+          <div className="w-[125px] h-[125px] rounded-full border-2 border-[#D96E84] p-0 box-border overflow-hidden bg-white">
+            <Image
+              src="/logo/logo.png"
+              width={115} // 115 - (2px borde * 2) - (2px padding * 2) = 112
+              height={115}
+              alt="Logo"
+              className="w-full h-full object-cover scale-75 "
+              style={{
+                position: "static", // Necesario para algunos navegadores
+                transformOrigin: "center", // Asegura el escalado desde el centro
+              }}
+            />
+          </div>
         </div>
 
         {/* Controles derechos */}
@@ -88,7 +94,9 @@ export default function ProductList({
           <div className="flex gap-4 items-center">
             <select
               value={sortBy}
-              onChange={(e) => setSortBy(e.target.value as "price_asc" | "price_desc")}
+              onChange={(e) =>
+                setSortBy(e.target.value as "price_asc" | "price_desc")
+              }
               className="px-4 py-2 rounded-lg border text-black"
             >
               <option value="price_asc">Precio: Menor a Mayor</option>
@@ -97,7 +105,7 @@ export default function ProductList({
 
             <button
               onClick={() => setIsCartOpen(true)}
-              className=" hover:text-[#D96E84] text-[#FAADA9] px-4 py-2 rounded-lg flex items-center gap-2 relative border-2"
+              className=" hover:text-[#D96E84] text-white px-4 py-2 rounded-lg flex items-center gap-2 relative border-2"
             >
               <div className="relative">
                 <ShoppingCartIcon className="w-6 h-6" />
@@ -111,7 +119,7 @@ export default function ProductList({
           </div>
         </div>
       </div>
-
+    <div className="container mx-auto px-4 py-6">
       {/* Filtros de Categoría */}
       <CategoryFilter
         categories={initialCategories}
@@ -152,5 +160,6 @@ export default function ProductList({
         products={initialProducts}
       />
     </div>
+    </>
   );
 }
